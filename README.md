@@ -50,6 +50,12 @@ Now let's add the Modelo Service Provider. Open the *app/config/app.php* file an
 'Koalabs\Modelo\ModeloServiceProvider'
 ```
 
+You may also publish the configuration files in order to avoid them being overriden in future updates. Simply type:
+
+```php
+php artisan config:publish koalabs/modelo
+```
+
 ### Configuration
 Find the configuration file at `'vendor/koalabs/modelo/src/config/modelo.php'` and move it to the `'app/config'` folder.
 
